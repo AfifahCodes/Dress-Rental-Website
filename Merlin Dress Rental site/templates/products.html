@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href={{url_for('static', filename ="css/style_index.css")}}>
+    <link rel="stylesheet" href={{url_for('static', filename ="css/categories.css")}}>
+    <link rel="stylesheet" href={{url_for('static', filename ="css/products.css")}}>
+    <link rel="stylesheet" href={{url_for('static', filename ="css/nav.css")}}>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <head>
+      <style>
+        .author{
+         font-family: 'Nova Cut', cursive;
+         color:black;
+       } 
+     </style>
+  <body style="background: rgb(221, 203, 207);" >
+    <!-- navbar -->
+      <nav> 
+        <div class="logo">
+          <h3><a href="merlin.html" class="logo-name">Merlin Dress Rental</a></h3>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <!-- <li><a href="categories.html">Categories</a></li> -->
+          <li><a href="contact.html">ContactUs</a></li>
+          <li><a href="login.html" id="login">Order</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- navbar -->
+      <h2 class="main-head-of-products">Everyone Has A Style Statment<br>
+        <span class="colored-word-bigger-size">FIND YOURS HERE!</span>
+      </h2>
+
+      <br>
+      <div class="bg-images">
+        <a href="products.html"><img src={{url_for('static', filename="images/products-img/marcus-loke-xXJ6utyoSw0-unsplash (1).jpg", alt="")}}></a>
+      </div>
+
+      <center><p class="msg-ps">
+        <span class="colored-word">Check</span> these product, note the article ID number.
+        <br>Go to Order Page and <span class="colored-word">FILL THE FORM</span> to purchase.
+      </p></center>
+
+      <div>
+        <br><br>
+        <br><br>
+        <br><br>
+        <center> <h1>For <span class="colored-word">Her</span></h1> </center>
+        <center><hr class="products-hr"></center>
+        <br><br>
+
+       <div class="dress">
+          <img src={{url_for('static', filename="images/products-img/women/Dress1.jpg" ,id="Dress ID 01 || Rs.4000" , onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Dress2.jpg" ,id="Dress ID 02 || Rs.4000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Dress3.jpg", id="Dress ID 03 || Rs.4000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Dress4.jpg" ,id="Dress ID 04 || Rs.4000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Dress5.jpg", id="Dress ID 05 || Rs.4000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Dress6.jpg", id="Dress ID 06 || Rs.4000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Dress7.jpg", id="Dress ID 07 || Rs.4000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Dress8.jpg", id="Dress ID 08 || Rs.4000" ,alt="" ,onclick="add(this.id)")}}>
+        </div> 
+
+        <div class="shirts">
+          <img src={{url_for('static', filename="images/products-img/women/Shirt1.jpg", id="Shirt ID 01 || Rs.2000" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Shirt2.jpg", id="Shirt ID 02 || Rs.2000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Shirt3.jpg", id="Shirt ID 03 || Rs.2000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Shirt4.jpg", id="Shirt ID 04 || Rs.2000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Shirt5.jpg", id="Shirt ID 05 || Rs.2000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Shirt6.jpg", id="Shirt ID 06 || Rs.2000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Shirt7.jpg", id="Shirt ID 07 || Rs.2000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Shirt8.jpg",id="Shirt ID 08 || Rs.2000" ,alt="" ,onclick="add(this.id)")}}>
+        </div>
+        <div class="pants">
+          <img src={{url_for('static', filename="images/products-img/women/Pant1.jpg", id="Pant ID 01 || Rs.2000", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Pant2.jpg", id="Pant ID 02 || Rs.2000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Pant3.jpg",id="Pant ID 03 || Rs.2000", alt="",onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Pant4.jpg", id="Pant ID 04 || Rs.2000", alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Pant5.jpg", id="Pant ID 05 || Rs.2000", alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Pant6.jpg", id="Pant ID 06 || Rs.2000", alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Pant7.jpg", id="Pant ID 07 || Rs.2000", alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Pant8.jpg", id="Pant ID 08 || Rs.2000", alt="" ,onclick="add(this.id)")}}>
+        </div>
+
+        <div class="skirts">
+          <img src={{url_for('static', filename="images/products-img/women/Skirt1.jpg", id="Skirt ID 01 || Rs.2000", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Skirt2.jpg", id="Skirt ID 02 || Rs.2000",alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Skirt3.jpg", id="Skirt ID 03 || Rs.2000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Skirt4.jpg", id="Skirt ID 04 || Rs.2000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Skirt5.jpg",id="Skirt ID 05 || Rs.2000", alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Skirt6.jpg", id="Skirt ID 06 || Rs.2000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Skirt7.jpg", id="Skirt ID 07 || Rs.2000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/Skirt8.jpg", id="Skirt ID 08 || Rs.2000", alt="", onclick="add(this.id)")}}>
+        </div>
+
+        <div class="suits for women">
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit1.jpg", id="Women Suit ID 01 || Rs.5000", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit2.jpg", id="Women Suit ID 02 || Rs.5000",alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit3.jpg", id="Women Suit ID 03 || Rs.5000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit4.jpg", id="Women Suit ID 04 || Rs.5000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit5.jpg", id="Women Suit ID 05 || Rs.5000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit6.jpg", id="Women Suit ID 06 || Rs.5000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit7.jpg", id="Women Suit ID 07 || Rs.5000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WomenSuit8.jpg", id="Women Suit ID 08 || Rs.5000", alt="", onclick="add(this.id)")}}>
+        </div>
+
+        <div class="wedding attaire">
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire1.jpg", id="Wedding Dress ID 01 || Rs.7000", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire2.jpg",id="Wedding Dress ID 02 || Rs.7000" ,alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire3.jpg", id="Wedding Dress ID 03 || Rs.7000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire4.jpg", id="Wedding Dress ID 04 || Rs.7000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire5.jpg", id="Wedding Dress ID 05 || Rs.7000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire6.jpg", id="Wedding Dress ID 06 || Rs.7000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire7.jpg", id="Wedding Dress ID 07 || Rs.7000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/women/WeddingAttire8.jpg", id="Wedding Dress ID 08 || Rs.7000" ,alt="" ,onclick="add(this.id)")}}>
+        </div>
+
+        <h1>For <span class="colored-word">Him</span></h1>
+        <center><hr class="products-hr"></center>
+        <br><br>
+
+        <div class="suits for men">
+          <img src={{url_for('static', filename="images/products-img/men/MenSuit1.jpg" , id="Men Suit ID 01 || Rs.5000", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/men/MenSuit3.jpg",  id="Men Suit ID 03 || Rs.5000", alt="", onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/men/MenSuit4.jpg", id="Men Suit ID 04 || Rs.5000", alt="" ,onclick="add(this.id)")}}>
+
+
+
+          <img src={{url_for('static', filename="images/products-img/men/MenSuit5.jpg" , id="Men Suit ID 05 || Rs.5000", alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/men/MenSuit6.jpg" , id="Men Suit ID 06 || Rs.5000" ,alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/men/MenSuit7.jpg",  id="Men Suit ID 07 || Rs.5000", alt="" ,onclick="add(this.id)")}}>
+          <img src={{url_for('static', filename="images/products-img/men/MenSuit8.jpg",  id="Men Suit ID 08 || Rs.5000", alt="" ,onclick="add(this.id)")}}>
+
+        <br><br><br>
+        
+
+        <h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+
+        <center>
+            <p class="author">Dress Price Rs.5000/-</p>
+            <p class="author">Shirts Price Rs.2000/-</p>
+            <p class="author">Skirts Price Rs.2000/-</p>
+            <p class="author">Pants Price Rs.2000/-</p>
+            <p class="author">Wedding Dresses Price Rs.7000/-</p>
+            <p class="author">Women Suits Price Rs.5000/-</p>
+            <p class="author">Men Suits Price Rs.5000/-</p>
+          </div>
+        </center>
+
+        <br><br><br>
+      </div>
+      
+    <script src="nav.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>
